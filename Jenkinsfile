@@ -2,7 +2,8 @@
 @Library('jenkins-shared-library')_
 
 pipeline {
-    agent any
+    //agent any
+    agent {label 'linux'}
     environment {
         //be sure to replace "sampriyadarshi" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "siddhit/train-schedule"
