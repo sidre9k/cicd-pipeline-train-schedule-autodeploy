@@ -51,7 +51,7 @@ pipeline {
             steps {
                 milestone(1)
                 kubernetesDeploy(
-                    kubeconfigId: 'kubeconfig_rks',
+                    kubeconfigId: 'kubeconfig-demo-amd',
                     configs: 'train-schedule-kube.yml',
                     enableConfigSubstitution: true
                 )
